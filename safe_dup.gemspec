@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Peter Camilleri"]
   spec.email         = ["peter.c.camilleri@gmail.com"]
 
-  spec.summary       = "A safer version of the dup method that avoids unnecessary exceptions."
-  spec.description   = "A safer version of the clone method."
+  spec.description   = "A safer version of the dup method that avoids unnecessary exceptions."
+  spec.summary       = "A safer version of the dup method."
   spec.homepage      = "http://teuthida-technologies.com/"
   spec.license       = "MIT"
 
