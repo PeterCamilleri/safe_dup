@@ -5,7 +5,7 @@ require 'irb'
 $force_alias_read_line_module = true
 require 'mini_readline'
 
-puts "Starting an IRB console with in_array loaded."
+puts "Starting an IRB console with safe_dup loaded."
 
 if ARGV[0] == 'local'
   require_relative 'lib/safe_dup'
