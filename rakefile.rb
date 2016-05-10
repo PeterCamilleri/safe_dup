@@ -8,7 +8,7 @@ Rake::TestTask.new do |t|
   t.verbose    = false
 end
 
-desc "Fire up an IRB session with in_array preloaded."
+desc "Fire up an IRB session with safe_dup preloaded."
 task :console do
   system "ruby irbt.rb local"
 end
