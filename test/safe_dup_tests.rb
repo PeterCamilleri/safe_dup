@@ -24,7 +24,7 @@ class SafeDupTester < Minitest::Test
     assert_equal((false).safe_dup, false)
     assert_equal((false).safe_dup.object_id, (false).object_id)
 
-    assert_equal((nil).safe_dup, nil)
+    assert_nil((nil).safe_dup)
     assert_equal((nil).safe_dup.object_id, (nil).object_id)
 
     rex = /ABC/
