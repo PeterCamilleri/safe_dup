@@ -172,6 +172,21 @@ end
     Dup with the safe dup method:   450557.6 i/s
     Dup with standard dup method:    39436.6 i/s - 11.42x slower
 
+#### Results: ruby 2.3.3p222 (2016-11-21 revision 56859) [i386-mingw32]
+    Warming up --------------------------------------
+    Dup with standard clone method
+                             5.866k i/100ms
+    Dup with the safe clone method
+                            23.721k i/100ms
+    Calculating -------------------------------------
+    Dup with standard clone method
+                             70.492k (± 0.4%) i/s -    357.826k in   5.076221s
+    Dup with the safe clone method
+                            523.478k (± 1.1%) i/s -      2.633M in   5.030544s
+
+    Comparison:
+    Dup with the safe clone method:   523477.8 i/s
+    Dup with standard clone method:    70491.9 i/s - 7.43x  slower
 
 
 Overall: Shorter code  _and_ faster. Winner, winner, chicken dinner!
